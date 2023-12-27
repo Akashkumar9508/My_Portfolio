@@ -1,0 +1,17 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#fff;
+    --seond-color:rgb(21, 195, 111);
+
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:var(--seond-color);
+}
