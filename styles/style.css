@@ -21,7 +21,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 100px;
+    padding: 0px 150px 0 100px;
     background: transparent;
     z-index: 100;
 }
@@ -46,9 +46,7 @@ nav ul li a:hover, nav .active{
     color: #26b4fc;
 }
 .home{
-    /* background-image: url(/asset/dash.png);
-     */
-     /* background-color:var(--bg-main) ; */
+    position: relative;
     padding: 0 100px;
     height: 100vh;
     width: 100%;
@@ -59,6 +57,7 @@ nav ul li a:hover, nav .active{
     align-items: center;
 }
  /* .left-text-section{
+    background-color: red;
     
 } */
 .home .left-text-section h1{
@@ -116,4 +115,60 @@ color: var(--main-text-color);
     color: var(--bg-main);
     
     
+    }
+    .social-icons{
+        position: absolute;
+        left: 69.5%;
+        display: flex;
+        gap: 20px;
+        /* bottom: 20px; */
+        top: 80%;
+
+    }
+    .social-icons i{
+        font-size: 1.2rem;
+        border: 2px solid var(--second-text-color);
+        border-radius: 50%;
+        padding: 5px;
+        transition: .5s ease;
+    }
+    .social-icons i:hover{
+        transform: scale(1.2);
+    }
+
+    .left-image-section{
+        height: 350px;
+        position: relative;
+        width: 350px;
+        /* background-color: red; */
+        border: 4px solid var(--second-text-color);
+        margin-left: 200px;
+        border-radius: 50%;
+ 
+    }
+    .left-image-section img{
+            height: 100%;
+            filter:opacity(1);
+    }
+    .spin{
+        position: absolute;
+        height: 380px;
+        width: 380px;
+        border-radius: 50%;
+        top: -20px;
+        left: -20px;
+        border-left: 5px solid var(--second-text-color);
+        border-right: 5px solid var(--second-text-color);
+        border-bottom: 5px solid transparent;
+        border-top: 5px solid transparent;
+        animation: spin 10s linear infinite;
+    }
+    @keyframes spin {
+        0%{
+            /* transform: rotate(0deg); */
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+        
     }
