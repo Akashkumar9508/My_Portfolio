@@ -15,7 +15,7 @@
 
 
 header{
-    height: 100px;
+    height: 90px;
     width: 100%;
     position: fixed;
     display: flex;
@@ -27,7 +27,7 @@ header{
 }
 header a{
     position: relative;
-    font-size:2.2rem;
+    font-size:1.8rem;
     font-weight: 600;
     color:var(--main-text-color);
 
@@ -37,9 +37,13 @@ nav ul{
     list-style: none;
 }
 nav ul li a{
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-left: 25px;
+    transition: .5s ease;
     
+}
+nav ul li a:hover, nav .active{
+    color: #26b4fc;
 }
 .home{
     /* background-image: url(/asset/dash.png);
@@ -59,34 +63,34 @@ nav ul li a{
 } */
 .home .left-text-section h1{
     color: var(--main-text-color);
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 .home .left-text-section h3{
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 600;
     color: var(--second-text-color);
 }
 .home .left-text-section p{
     color: var(--main-text-color);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 .left-text-section-hire-btn{
     /* background-color: red; */
     display: flex;
-    gap: 50px;
+    gap: 30px;
     margin-top: 30px;
 }
 .left-text-section-hire-btn a{
-    height: 50px;
-    width:150px;
+    height: 45px;
+    width:130px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     border-radius: 5px;
-    transition: .5s ease;
+    transition: 0.7s ease;
 }
 .left-text-section-hire-btn a:nth-child(1){
     border: 3px solid var(--second-text-color);
