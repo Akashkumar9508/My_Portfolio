@@ -43,7 +43,7 @@ header {
     background: transparent;
     z-index: 100;
     transition: .5s ease;
-    animation: fadetop 1.5s ease-in-out;
+    
 }
 
 header a {
@@ -54,13 +54,39 @@ header a {
     justify-content: center;
     align-items: center;
     color: var(--main-text-color);
+    animation: fadetop 1.5s ease;
     
 
 }
 @keyframes fadetop {
     0%{
-        transform: translateY(200px);
+        transform: translateY(-200px);
         opacity: 0;
+    }   0%{
+        transform: translateX(-2000px);
+        opacity: 0;
+    }   60%{
+        transform: translateY(400px);
+        opacity: 0.2;
+    }   80%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes faderight {
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }   0%{
+        transform: translateX(2000px);
+        opacity: 0;
+    }   60%{
+        transform: translateY(400px);
+        opacity: 0.2;
+    }   80%{
+        opacity: 0.5;
     }
     100%{
         transform: translateY(0px);
@@ -74,6 +100,7 @@ header a img{
 nav ul {
     display: flex;
     list-style: none;
+    animation: faderight 1.5s ease-in-out;
 }
 
 nav ul li a {
@@ -123,28 +150,27 @@ header.sticky{
     font-size: 2.2rem;
     font-weight: 600;
     color: var(--main-text-color);
-    animation: fadetop 1.8s ease-in-out;
+    animation: fadetop 1.5s ease-in-out;
 }
 
 .home .left-text-section h3 span {
     font-size: 2.2rem;
     font-weight: 600;
     color: var(--second-text-color);
-    animation: fadetop 1.8s ease-in-out;
+    animation: fadetop 1.5s ease-in-out;
 }
 
 .home .left-text-section p {
     color: var(--main-text-color);
     font-size: 1.1rem;
     font-weight: 400;
-    animation: fadetop 2.2s ease-in-out;
+    animation: fadetop 1.5s ease-in-out;
 }
 
 .left-text-section-hire-btn {
     display: flex;
     gap: 30px;
     margin-top: 30px;
-    animation: fadetop 2.5s ease-in-out;
 }
 
 .left-text-section-hire-btn a {
@@ -157,7 +183,7 @@ header.sticky{
     font-weight: 600;
     border-radius: 5px;
     transition: 0.7s ease;
-    animation: fadetop 2.5s ease-in-out;
+    animation: fadetop 1.5s ease-in-out;
 }
 
 .left-text-section-hire-btn a:nth-child(1) {
@@ -187,7 +213,7 @@ header.sticky{
     display: flex;
     gap: 20px;
     top: 80%;
-    animation: fadetop 1.5s ease-in-out;
+    animation: faderight 1.5s ease-in-out;
 }
 
 .social-icons a i {
@@ -210,7 +236,7 @@ header.sticky{
     margin-left: 200px;
     border-radius: 50%;
     box-shadow: 0px 0px 20px 1px var(--second-text-color);
-    animation: fadetop 1.5s ease-in-out;
+    animation: faderight 1.5s ease-in-out;
 
 }
 
@@ -230,11 +256,11 @@ header.sticky{
     border-right: 5px solid var(--second-text-color);
     border-bottom: 5px solid transparent;
     border-top: 5px solid transparent;
-    animation: spin 10s linear infinite;
+    animation: spin 10s 1.5s linear infinite;
 } 
 @keyframes spin {
     100% {
-        transform: rotate(-180deg);
+        transform: rotate(360deg);
     }
 } 
 /* home end  */
