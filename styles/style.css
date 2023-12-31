@@ -7,6 +7,7 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+
 }
 
 :root {
@@ -42,6 +43,7 @@ header {
     background: transparent;
     z-index: 100;
     transition: .5s ease;
+    animation: fadetop 1.5s ease-in-out;
 }
 
 header a {
@@ -52,7 +54,17 @@ header a {
     justify-content: center;
     align-items: center;
     color: var(--main-text-color);
+    
 
+}
+@keyframes fadetop {
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 header a img{
     height: 50px;
@@ -92,6 +104,9 @@ header.sticky{
     display: flex;
     justify-content: left;
     align-items: center;
+}
+.home .left-text-section{
+    animation: fadetop 1.5s ease-in-out;
 }
 .home .left-text-section h1 {
     color: var(--main-text-color);
@@ -160,6 +175,7 @@ header.sticky{
     display: flex;
     gap: 20px;
     top: 80%;
+    animation: fadetop 1.5s ease-in-out;
 
 }
 
@@ -183,6 +199,7 @@ header.sticky{
     margin-left: 200px;
     border-radius: 50%;
     box-shadow: 0px 0px 20px 1px var(--second-text-color);
+    animation: fadetop 1.5s ease-in-out;
 
 }
 
@@ -203,13 +220,12 @@ header.sticky{
     border-bottom: 5px solid transparent;
     border-top: 5px solid transparent;
     animation: spin 10s linear infinite;
-}
-
+} 
 @keyframes spin {
     100% {
-        transform: rotate(360deg);
+        transform: rotate(-180deg);
     }
-}
+} 
 /* home end  */
 /* about section  */
 .about{
