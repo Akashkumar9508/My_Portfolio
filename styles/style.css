@@ -359,16 +359,16 @@ header.sticky {
     }
     header a{
         
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     header a img {
-        height: 30px;
+        height: 35px;
     }
     nav{
         display: none;
     }
     header.sticky {
-        height: 40px;
+        height: 50px;
     }
  .home{
     background-color: var(--bg-main);
@@ -376,23 +376,23 @@ header.sticky {
     padding: 0 20px;
  }
  .home .left-text-section {
-    height: 50%;
+    height: 70%;
     width: 100%;
     /* background-color: red; */
     /* background-color: red; */
 }
 .home .left-text-section h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .home .left-text-section h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .home .left-text-section h3 span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .home .left-text-section p {
     color: var(--main-text-color);
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 .left-text-section-hire-btn {
     display: flex;
@@ -400,34 +400,34 @@ header.sticky {
     margin-top: 10px;
 }
 .left-text-section-hire-btn a {
-    height: 25px;
-    width: 80px;
-    font-size: 0.7rem;
+    height: 35px;
+    width: 90px;
+    font-size: 0.9rem;
     font-weight: 600;
     border-radius: 3px;
+    border:1.5px solid var(--second-text-color)
 }
 .right-image-section {
     height: 50%;
     width:100% ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
     /* background-color: blue; */
 }
 .right-image-section img {
     height: 250px;
     width: 250px;
     margin-left: 0px;
+    transition: .5s ease-in-out;
 }
 .spin {
-    top: 12.2%;
-    left: 11.5%;
+    top:-4%;
+    left: 12.5%;
     height: 280px;
     width: 280px;
 }
 .social-icons {
     left: 27%;
-    top: 95%;
+    top: 110%;
 }
 
 
