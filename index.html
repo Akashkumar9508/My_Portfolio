@@ -52,12 +52,14 @@
         </div>
     </section>
     <!-- home end  -->
-    <section id="about" class="about">
+    <!-- <section id="about" class="about">
         <div class="about-image-section">
             <img src="asset/aboutimg.png" alt="">
         </div>
-        <div class="about-text-section"></div>
-    </section>
+        <div class="about-text-section">
+            <h1>About Me</h1>
+        </div>
+    </section> -->
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
@@ -73,6 +75,7 @@
     <script>
         AOS.init();
     </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 
@@ -88,7 +91,23 @@
             scaleMobile: 1.00,
             color: 0x0073f7,
             backgroundColor: 0x080e1e
-        });
+});
+window.addEventListener('resize', function(){
+    if(window.innerWidth > 425){
+        VANTA.NET({
+            el: "#home",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 1100.00,
+            minWidth: 100.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x0073f7,
+            backgroundColor: 0x080e1e
+}); 
+    }
+});
     </script>
 </body>
 
