@@ -378,7 +378,7 @@ header.sticky {
  .home .left-text-section {
     height: 50%;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     /* background-color: red; */
 }
 .home .left-text-section h1 {
@@ -412,7 +412,7 @@ header.sticky {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .right-image-section img {
     height: 250px;
