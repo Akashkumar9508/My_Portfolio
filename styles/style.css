@@ -59,7 +59,7 @@ header a {
 }
 @keyframes fadetop {
     0%{
-        transform: translateY(-200px);
+        transform: translateY(200px);
         opacity: 0;
     }
     100%{
@@ -106,34 +106,45 @@ header.sticky{
     align-items: center;
 }
 .home .left-text-section{
-    animation: fadetop 1.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    height:100%;
+    width: 700px;
+    /* background-color: red; */
 }
 .home .left-text-section h1 {
     color: var(--main-text-color);
     font-size: 3.5rem;
+    animation: fadetop 1.5s ease-in-out;
 }
 .home .left-text-section h3{
     font-size: 2.2rem;
     font-weight: 600;
     color: var(--main-text-color);
+    animation: fadetop 1.8s ease-in-out;
 }
 
 .home .left-text-section h3 span {
     font-size: 2.2rem;
     font-weight: 600;
     color: var(--second-text-color);
+    animation: fadetop 1.8s ease-in-out;
 }
 
 .home .left-text-section p {
     color: var(--main-text-color);
     font-size: 1.1rem;
     font-weight: 400;
+    animation: fadetop 2.2s ease-in-out;
 }
 
 .left-text-section-hire-btn {
     display: flex;
     gap: 30px;
     margin-top: 30px;
+    animation: fadetop 2.5s ease-in-out;
 }
 
 .left-text-section-hire-btn a {
@@ -146,6 +157,7 @@ header.sticky{
     font-weight: 600;
     border-radius: 5px;
     transition: 0.7s ease;
+    animation: fadetop 2.5s ease-in-out;
 }
 
 .left-text-section-hire-btn a:nth-child(1) {
@@ -171,12 +183,11 @@ header.sticky{
 
 .social-icons {
     position: absolute;
-    left: 69.5%;
+    left: 70.5%;
     display: flex;
     gap: 20px;
     top: 80%;
     animation: fadetop 1.5s ease-in-out;
-
 }
 
 .social-icons a i {
