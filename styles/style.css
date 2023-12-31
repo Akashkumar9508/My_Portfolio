@@ -117,7 +117,6 @@ header a {
 
 header a img {
     height: 50px;
-    margin-bottom: px;
 }
 
 nav ul {
@@ -163,7 +162,7 @@ header.sticky {
     align-items: start;
     flex-direction: column;
     height: 100%;
-    width: 700px;
+    width: 50%;
     /* background-color: red; */
 }
 
@@ -255,30 +254,34 @@ header.sticky {
     transform: scale(1.2);
 }
 
-.left-image-section {
+.right-image-section {
+    height: 100%;
+    width:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: faderight 1.5s ease-in-out;
+    /* background-color: blue; */
+}
+
+.right-image-section img {
     height: 350px;
     position: relative;
     width: 350px;
+    margin-left: 150px;
     border: 4px solid var(--second-text-color);
-    margin-left: 200px;
     border-radius: 50%;
     box-shadow: 0px 0px 20px 1px var(--second-text-color);
-    animation: faderight 1.5s ease-in-out;
-
-}
-
-.left-image-section img {
-    height: 100%;
     filter: opacity(1);
 }
 
 .spin {
     position: absolute;
+    top: 22.5%;
+    left: 33%;
     height: 380px;
     width: 380px;
     border-radius: 50%;
-    top: -20px;
-    left: -20px;
     border-left: 5px solid var(--second-text-color);
     border-right: 5px solid var(--second-text-color);
     border-bottom: 5px solid transparent;
@@ -349,9 +352,84 @@ header.sticky {
 
 /* media  */
 @media screen and (max-width: 425px){
-    body{
-        
+    header{
+        padding: 0 10px 0 10px;
+        position: fixed;
+        height: 50px;
     }
+    header a{
+        
+        font-size: 1rem;
+    }
+    header a img {
+        height: 30px;
+    }
+    nav{
+        display: none;
+    }
+    header.sticky {
+        height: 40px;
+    }
+ .home{
+    background-color: var(--bg-main);
+    display: block;
+    padding: 0 20px;
+ }
+ .home .left-text-section {
+    height: 50%;
+    width: 100%;
+    background-color: red;
+    /* background-color: red; */
+}
+.home .left-text-section h1 {
+    font-size: 1.5rem;
+}
+.home .left-text-section h3 {
+    font-size: 1.2rem;
+}
+.home .left-text-section h3 span {
+    font-size: 1.2rem;
+}
+.home .left-text-section p {
+    color: var(--main-text-color);
+    font-size: 0.7rem;
+}
+.left-text-section-hire-btn {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+.left-text-section-hire-btn a {
+    height: 25px;
+    width: 80px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.right-image-section {
+    height: 50%;
+    width:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+.right-image-section img {
+    height: 250px;
+    width: 250px;
+    margin-left: 0px;
+}
+.spin {
+    top: 12.2%;
+    left: 11.5%;
+    height: 280px;
+    width: 280px;
+}
+.social-icons {
+    left: 27%;
+    top: 95%;
+}
+
 
     
 }
