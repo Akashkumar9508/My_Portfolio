@@ -737,36 +737,36 @@ svg {
     svg {
         display: block;
     }
-}
-.about {
-    padding: 0 20px;
-    height: 120vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.about-image-section {
-    background-color: var(--second-bg);
-    height: 50%;
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
-}
-.about-image-section img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-}
-.about-text-section {
-    padding-left: 0px;
-    /* background-color: red; */
-    height: 60%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    align-items: start;
+    .about {
+        padding: 0 20px;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-image-section {
+        background-color: var(--second-bg);
+        height: 50%;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+    }
+    .about-image-section img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .about-text-section {
+        padding-left: 0px;
+        /* background-color: red; */
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: start;
+    }
 }
