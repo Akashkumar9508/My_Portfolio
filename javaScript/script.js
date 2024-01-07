@@ -11,3 +11,13 @@ window.addEventListener("scroll", function () {
         header.classList.remove("sticky2");
     }
 });
+const navlinks = document.querySelector("ul");
+const menubtn = document.getElementById("menubtn");
+
+menubtn.addEventListener("click", function() {
+    if (navlinks.style.left === "-300px") { 
+        navlinks.style.left = "0px";
+    } else {
+        navlinks.style.left = "-300px";
+    }
+});
