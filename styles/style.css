@@ -498,7 +498,6 @@ svg {
     justify-content: center;
     align-items: center;
     gap: 20px;
-
 }
 
 .myJourney h1 {
@@ -556,7 +555,7 @@ svg {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    border: 2px solid var(--second-text-color);
+ 
     z-index: 1;
 }
 
@@ -797,5 +796,35 @@ svg {
 .about-btn a{
     border: .8px solid var(--second-text-color);
     font-size: 0.6rem;
+}
+.myJourney {
+    height: 150vh;
+    gap: 0px;
+}
+.myJourney-mainBox {
+    height: 90%;
+    display: block;
+}
+.myJourney-mainBox .myJourney-education {
+    height: 500px;
+    width: 100%;
+}
+.myJourney-mainBox .myJourney-experince {
+    height: 400px;
+    width: 100%;
+}
+.myJourney-content {
+    position: relative;
+    height: 100px;
+    border: 1px solid var(--second-text-color);
+}
+.myJourney-content::before {
+    position: absolute;
+    content: " ";
+    height: 10px;
+    left: -5.5%;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--second-text-color);
 }
 }
