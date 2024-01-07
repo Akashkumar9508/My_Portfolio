@@ -757,18 +757,16 @@ svg {
     .about {
         padding: 0 20px;
         height: 120vh;
-        display: flex;
+        display: block;
         flex-direction: column;
         justify-content: center;
     }
     .about-image-section {
-        background-color: var(--second-bg);
-        height: 50%;
-        width: 30%;
+        height: 40%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* background-color: red; */
     }
     .about-image-section img {
         width: 250px;
@@ -777,13 +775,27 @@ svg {
     }
     .about-text-section {
         padding-left: 0px;
-        /* background-color: red; */
-        height: 60%;
+        height: 50%;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        align-items: start;
     }
+    .about-text-section h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .about-detial{
+        margin-left:  20px
+}
+.detial-content h2::after{
+    left: -12.5%;
+}
+.about-btn{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 6%;
+    width: 60%;
+}
+.about-btn a{
+    border: .8px solid var(--second-text-color);
+    font-size: 0.6rem;
+}
 }
