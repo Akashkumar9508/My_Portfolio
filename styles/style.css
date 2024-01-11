@@ -138,6 +138,16 @@ nav ul li a:hover,
 nav .active {
     color: #26b4fc;
 }
+.panel-open{
+    left:0px;
+}
+header .bx{
+    color: var(--main-text-color);
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
 
 header.sticky {
     background-color: var(--second-bg);
@@ -150,63 +160,6 @@ header.sticky {
     height: 60px;
     position: fixed;
 }
-
-svg {
-    display: none;
-}
-
-.ham {
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    transition: transform 400ms;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.hamRotate.active {
-    transform: rotate(45deg);
-}
-
-.hamRotate180.active {
-    transform: rotate(180deg);
-}
-
-.line {
-    fill: none;
-    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke: var(--main-text-color);
-    stroke-width: 2.5;
-    stroke-linecap: round;
-}
-
-.ham3 .top {
-    stroke-dasharray: 40 130;
-}
-
-.ham3 .middle {
-    stroke-dasharray: 40 140;
-}
-
-.ham3 .bottom {
-    stroke-dasharray: 40 205;
-}
-
-.ham3.active .top {
-    stroke-dasharray: 75 130;
-    stroke-dashoffset: -63px;
-}
-
-.ham3.active .middle {
-    stroke-dashoffset: -102px;
-}
-
-.ham3.active .bottom {
-    stroke-dasharray: 110 205;
-    stroke-dashoffset: -86px;
-}
-
 /* header end  */
 /* home section  */
 .home {
@@ -555,7 +508,7 @@ svg {
     justify-content: center;
     align-content: center;
     flex-direction: column;
- 
+    border: 1px solid var(--second-text-color);
     z-index: 1;
 }
 
@@ -750,7 +703,7 @@ svg {
         top: 90%;
     }
 
-    svg {
+    header .bx{
         display: block;
     }
     .about {
