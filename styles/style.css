@@ -62,12 +62,12 @@ header a {
     justify-content: center;
     align-items: center;
     color: var(--main-text-color);
-    animation: fadeleft 1.5s ease;
+    /* animation: fadeleft 1.5s ease; */
 
 
 }
 
-@keyframes fadeleft {
+/* @keyframes fadeleft {
     0% {
         transform: translateY(-200px);
         opacity: 0;
@@ -115,7 +115,7 @@ header a {
     100% {
         transform: translateY(0px);
     }
-}
+} */
 
 header a img {
     height: 50px;
@@ -125,7 +125,7 @@ nav ul {
     display: flex;
     list-style: none;
     animation: faderight 1.5s ease-in-out;
-    transition: .5s ease-in-out;
+    /* transition: .5s ease-in-out; */
 }
 
 nav ul li a {
@@ -187,28 +187,28 @@ header.sticky {
 .home .left-text-section h1 {
     color: var(--main-text-color);
     font-size: 3.5rem;
-    animation: fadeleft 1.5s ease-in-out;
+    /* animation: fadeleft 1.5s ease-in-out; */
 }
 
 .home .left-text-section h3 {
     font-size: 2.2rem;
     font-weight: 600;
     color: var(--main-text-color);
-    animation: fadeleft 1.5s ease-in-out;
+    /* animation: fadeleft 1.5s ease-in-out; */
 }
 
 .home .left-text-section h3 span {
     font-size: 2.2rem;
     font-weight: 600;
     color: var(--second-text-color);
-    animation: fadeleft 1.5s ease-in-out;
+    /* animation: fadeleft 1.5s ease-in-out; */
 }
 
 .home .left-text-section p {
     color: var(--main-text-color);
     font-size: 1.1rem;
     font-weight: 400;
-    animation: fadeleft 1.5s ease-in-out;
+    /* animation: fadeleft 1.5s ease-in-out; */
 }
 
 .left-text-section-hire-btn {
@@ -227,7 +227,7 @@ header.sticky {
     font-weight: 600;
     border-radius: 5px;
     transition: 0.7s ease;
-    animation: fadeleft 1.5s ease-in-out;
+    /* animation: fadeleft 1.5s ease-in-out; */
 }
 
 .left-text-section-hire-btn a:nth-child(1) {
@@ -564,6 +564,14 @@ header.sticky {
     margin-left: 2%;
 }
 
+
+/* project section started  */
+
+.project-section{
+    background-color: red;
+    height: 150vh;
+    width: 100%;
+}
 
 
 

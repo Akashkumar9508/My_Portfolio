@@ -40,5 +40,42 @@ menuBtn.addEventListener('click', function() {
     }
 });
 
+// gsap 
+const t1=gsap.timeline();
+
+t1.from("#logo-main",{
+    x:"-100%",
+    opacity:0,
+    duration:1,
+    ease : "back"
+    
+})
+t1.from("#navlinks",{
+    x:"-100%",
+    opacity:0,
+    duration:1,
+    ease : "back"
+})
+t1.from(".left-text-section",{
+    y:"-100%",
+    opacity:0,
+    duration:1,
+    ease : "bounce"
+})
+t1.from(".right-image-section",{
+    y:"-100%",
+    opacity:0,
+    duration:1,
+    ease : "bounce"
+})
+t1.from(".social-icons",{
+    x:"100%",
+    opacity:0,
+    duration:1,
+    ease : "back"
+})
+
+const t2=gsap.timeline();
+
 
 
