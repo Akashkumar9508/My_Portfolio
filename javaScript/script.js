@@ -6,6 +6,9 @@ window.addEventListener("scroll", function () {
     } else if (window.scrollY > 650 && 1300) {
         header.classList.add("sticky");
         header.classList.remove("sticky2");
+    } else if (window.scrollY > 1300 && 2000) {
+        header.classList.add("sticky");
+        header.classList.remove("sticky2");
     } else {
         header.classList.remove("sticky");
         header.classList.remove("sticky2");
@@ -49,25 +52,25 @@ t1.from("#logo-main",{
     duration:1,
     ease : "back"
     
-})
+},'first');
 t1.from("#navlinks",{
     x:"-100%",
     opacity:0,
     duration:1,
     ease : "back"
-})
+},'first')
 t1.from(".left-text-section",{
     y:"-100%",
     opacity:0,
     duration:1,
     ease : "bounce"
-})
+},'second')
 t1.from(".right-image-section",{
     y:"-100%",
     opacity:0,
     duration:1,
     ease : "bounce"
-})
+},'second')
 t1.from(".social-icons",{
     x:"100%",
     opacity:0,
