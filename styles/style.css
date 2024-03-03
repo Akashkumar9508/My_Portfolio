@@ -587,6 +587,7 @@ header.sticky {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .card{
     flex-direction: column;
@@ -672,6 +673,7 @@ header.sticky {
         display: inline;
         position: absolute;
         background-color: var(--bg-main);
+        /* background-color: transparent; */
         height: 100vh;
         left: -300px;
         top: 0;
