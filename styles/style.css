@@ -840,3 +840,7 @@ header.sticky {
     background-color: var(--second-text-color);
 }
 }
+
+
+
+ /*given an array of integer nums and integer target , return indices of the two number such that they add upto target*/
